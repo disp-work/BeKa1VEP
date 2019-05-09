@@ -1,0 +1,755 @@
+{
+	"headerExpanded": true,
+	"selectedKey": "participants",
+
+	"navigation": [{
+		"title": "Teilnehmer",
+		"icon": "sap-icon://employee",
+		"key": "participants"
+	}, {
+		"title": "Ausbilder",
+		"icon": "sap-icon://learning-assistant",
+		"key": "instructor"
+	}, {
+		"title": "Zeitleisten",
+		"icon": "sap-icon://date-time",
+		"key": "timelines"
+	}],
+	"fixedNavigation": [{
+		"title": "Veranstaltungen",
+		"icon": "sap-icon://education"
+	}, {
+		"title": "Hinweise",
+		"icon": "sap-icon://notes"
+	}],
+
+	"seminarSet": [{
+		"key": "BDA",
+		"name": "Berufliche Schulen Darmstadt"
+	}, {
+		"key": "XDA",
+		"name": "GHRF Darmstadt"
+	}, {
+		"key": "XESW",
+		"name": "GHRF Eschwege"
+	}, {
+		"key": "XFF",
+		"name": "GHRF Frankfurt"
+	}, {
+		"key": "XFB",
+		"name": "GHRF Friedberg"
+	}, {
+		"key": "GDA",
+		"name": "Gymnasien Darmstadt"
+	}],
+
+	"subjectSet": [{
+		"key": "",
+		"name": "Fachübergreifend"
+	}, {
+		"key": "AL",
+		"name": "Arbeitslehre"
+	}, {
+		"key": "AB",
+		"name": "Biologie"
+	}, {
+		"key": "CHE",
+		"name": "Chemie"
+	}, {
+		"key": "DG",
+		"name": "Deutsch (Grundschule)"
+	}, {
+		"key": "DHR",
+		"name": "Deutsch"
+	}, {
+		"key": "E",
+		"name": "Englisch"
+	}, {
+		"key": "EK",
+		"name": "Erdkunde"
+	}, {
+		"key": "MA",
+		"name": "Mathematik"
+	}],
+
+	"periodSet": [{
+		"key": "201701",
+		"name": "01.2017"
+	}, {
+		"key": "201702",
+		"name": "02.2017"
+	}, {
+		"key": "201801",
+		"name": "01.2018"
+	}, {
+		"key": "201802",
+		"name": "02.2018"
+	}, {
+		"key": "201901",
+		"name": "01.2019"
+	}, {
+		"key": "201902",
+		"name": "02.2019"
+	}],
+
+	"semesterSet": [{
+		"key": "EF",
+		"name": "Einführungssemester"
+	}, {
+		"key": "HS1",
+		"name": "1. Hauptsemester"
+	}, {
+		"key": "HS2",
+		"name": "2. Hauptsemester"
+	}, {
+		"key": "PS",
+		"name": "Prüfungssemester"
+	}],
+
+	"numberPeriodSet": [{
+		"key": "1",
+		"name": "1"
+	}, {
+		"key": "2",
+		"name": "2"
+	}, {
+		"key": "3",
+		"name": "3"
+	}, {
+		"key": "4",
+		"name": "4"
+	}, {
+		"key": "5",
+		"name": "5"
+	}, {
+		"key": "6",
+		"name": "6"
+	}],
+
+	"employeeSet": [{
+		"key": "1239102",
+		"name": "Marco Button Tuttofare"
+	}, {
+		"key": "2239102",
+		"name": "Dirk Ludwig"
+	}],
+
+	"participantSet": [{
+		"key": "1239102",
+		"name": "Marco Button Tuttofare",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"modulKey": "HS2E1",
+		"modul": "Englisch (G) B",
+		"instructorKey": "2239103",
+		"instructor": "Oskar Schlemmer",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "1239102",
+		"name": "Marco Button Tuttofare",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"modulKey": "HS2MA1",
+		"modul": "Mathematik (G) B",
+		"instructorKey": "2239102",
+		"instructor": "Dirk Ludwig",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "1239102",
+		"name": "Marco Button Tuttofare",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"modulKey": "DIVLL",
+		"modul": "Diversität in Lehr- und Lernprozessen",
+		"instructorKey": "",
+		"instructor": "",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "",
+		"timerange": "",
+		"statusIcon": "sap-icon://negative"
+	}, {
+		"key": "1239112",
+		"name": "Rosa Luxemburg",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "EF",
+		"semester": "Einführungssemester",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"modulKey": "EFMA1",
+		"modul": "Mathematik Didaktik Grundschule",
+		"instructorKey": "2239102",
+		"instructor": "Dirk Ludwig",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block B",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "1239112",
+		"name": "Rosa Luxemburg",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "EF",
+		"semester": "Einführungssemester",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"modulKey": "EF1",
+		"modul": "Einführung in die Lehrerausbildung",
+		"instructorKey": "",
+		"instructor": "",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "",
+		"timerange": "",
+		"statusIcon": "sap-icon://negative"
+	}, {
+		"key": "1239112",
+		"name": "Rosa Luxemburg",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "EF",
+		"semester": "Einführungssemester",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"modulKey": "EF2",
+		"modul": "Vorstellungsrunde",
+		"instructorKey": "",
+		"instructor": "N.N",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Donnerstag",
+		"timerange": "Block B",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "1239122",
+		"name": "Günther Holzapfel",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "HS1",
+		"semester": "1. Hauptsemester",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"modulKey": "HS1E1",
+		"modul": "Englisch (G) A",
+		"instructorKey": "",
+		"instructor": "",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "",
+		"timerange": "",
+		"statusIcon": "sap-icon://negative"
+	}, {
+		"key": "1239122",
+		"name": "Günther Holzapfel",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "HS1",
+		"semester": "1. Hauptsemester",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"modulKey": "HS1MA1",
+		"modul": "Mathematik (G) A",
+		"instructorKey": "2239102",
+		"instructor": "Dirk Ludwig",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "1239122",
+		"name": "Günther Holzapfel",
+		"periodKey": "201902",
+		"period": "02.2019",
+		"semesterKey": "HS1",
+		"semester": "1. Hauptsemester",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"modulKey": "EFE1",
+		"modul": "Englisch Didaktik Grundschule",
+		"instructorKey": "",
+		"instructor": "",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "",
+		"timerange": "",
+		"statusIcon": "sap-icon://negative"
+	}],
+	"instructorSet": [{
+		"key": "2239102",
+		"name": "Dirk Ludwig",
+		"modulKey": "EFMA1",
+		"modul": "Mathematik Didaktik Grundschule",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"teilnehmer": 5,
+		"grundentlastung": "1,0",
+		"stdproliv": "1,0",
+		"bedarf": "6,0",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block B",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "2239102",
+		"name": "Dirk Ludwig",
+		"modulKey": "EF1",
+		"modul": "Einführung in die Lehrerausbildung",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"teilnehmer": 3,
+		"grundentlastung": "0,6",
+		"stdproliv": "0,5",
+		"bedarf": "2,1",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block D",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "2239102",
+		"name": "Dirk Ludwig",
+		"modulKey": "HS1MA1",
+		"modul": "Mathematik (G) A",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"teilnehmer": 6,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "8,0",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "2239102",
+		"name": "Dirk Ludwig",
+		"modulKey": "HS2MA1",
+		"modul": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"teilnehmer": 8,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "10,0",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "2239103",
+		"name": "Oskar Schlemmer",
+		"modulKey": "HS2E1",
+		"modul": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"teilnehmer": 4,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "6,0",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "2239103",
+		"name": "Oskar Schlemmer",
+		"modulKey": "HS2E1",
+		"modul": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"teilnehmer": 6,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "8,0",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "2239122",
+		"name": "Günther Dörrapfel",
+		"modulKey": "DIVLL",
+		"modul": "Diversität in Lehr- und Lernprozessen",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"teilnehmer": 5,
+		"grundentlastung": "1,0",
+		"stdproliv": "0,5",
+		"bedarf": "3,5",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block B",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "2239122",
+		"name": "Günther Dörrapfel",
+		"modulKey": "HS2MA1",
+		"modul": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"teilnehmer": 5,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "7,0",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}],
+
+	"timelineSet": [{
+		"key": "HS2E1",
+		"name": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 4,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "6,0",
+		"instructorKey": "2239103",
+		"instructor": "Oskar Schlemmer",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2E1",
+		"name": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 4,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "6,0",
+		"instructorKey": "2239113",
+		"instructor": "Günther Wallraff",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2MA1",
+		"name": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 5,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "7,0",
+		"instructorKey": "2239122",
+		"instructor": "Günther Dörrapfel",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "DIVLL",
+		"name": "Diversität in Lehr- und Lernprozessen",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 5,
+		"grundentlastung": "1,0",
+		"stdproliv": "0,5",
+		"bedarf": "3,5",
+		"instructorKey": "2239122",
+		"instructor": "Günther Dörrapfel",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block B",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2E1",
+		"name": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 6,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "8,0",
+		"instructorKey": "2239103",
+		"instructor": "Oskar Schlemmer",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2E1",
+		"name": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 4,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "6,0",
+		"instructorKey": "99999999",
+		"instructor": "N.N.",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://negative"
+	}, {
+		"key": "HS2MA1",
+		"name": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 8,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "10,0",
+		"instructorKey": "2239102",
+		"instructor": "Dirk Ludwig",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2MA1",
+		"name": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 5,
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "7,0",
+		"instructorKey": "2239132",
+		"instructor": "Trude Herr",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "DIVLL",
+		"name": "Diversität in Lehr- und Lernprozessen",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 3,
+		"grundentlastung": "1,0",
+		"stdproliv": "0,5",
+		"bedarf": "2,5",
+		"instructorKey": "99999999",
+		"instructor": "N.N.",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Donnerstag",
+		"timerange": "Block D",
+		"statusIcon": "sap-icon://negative"
+	}],
+
+	"moduleSet": [{
+		"key": "HS2E1",
+		"name": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 4,
+		"veranstaltungen": 4,		
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "6,0",
+		"instructorKey": "2239103",
+		"instructor": "Oskar Schlemmer",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2E1",
+		"name": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 6,
+		"veranstaltungen": 4,			
+		"grundentlastung": "2,0",
+		"stdproliv": "1,0",
+		"bedarf": "8,0",
+		"instructorKey": "2239103",
+		"instructor": "Oskar Schlemmer",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2E1",
+		"name": "Englisch (G) B",
+		"subjectKey": "E",
+		"subject": "Englisch",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 4,
+		"grundentlastung": "2,0",
+		"veranstaltungen": 4,			
+		"stdproliv": "1,0",
+		"bedarf": "6,0",
+		"instructorKey": "99999999",
+		"instructor": "N.N.",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://negative"
+	}, {
+		"key": "HS2MA1",
+		"name": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 8,
+		"grundentlastung": "2,0",
+		"veranstaltungen": 3,			
+		"stdproliv": "1,0",
+		"bedarf": "10,0",
+		"instructorKey": "2239102",
+		"instructor": "Dirk Ludwig",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2MA1",
+		"name": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 5,
+		"grundentlastung": "2,0",
+		"veranstaltungen": 3,			
+		"stdproliv": "1,0",
+		"bedarf": "7,0",
+		"instructorKey": "2239122",
+		"instructor": "Günther Dörrapfel",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block A",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "HS2MA1",
+		"name": "Mathematik (G) B",
+		"subjectKey": "MA",
+		"subject": "Mathematik",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 5,
+		"grundentlastung": "2,0",
+		"veranstaltungen": 3,			
+		"stdproliv": "1,0",
+		"bedarf": "7,0",
+		"instructorKey": "2239132",
+		"instructor": "Trude Herr",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block C",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "DIVLL",
+		"name": "Diversität in Lehr- und Lernprozessen",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 5,
+		"grundentlastung": "1,0",
+		"veranstaltungen": 8,		
+		"stdproliv": "0,5",
+		"bedarf": "3,5",
+		"instructorKey": "2239122",
+		"instructor": "Günther Dörrapfel",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Dienstag",
+		"timerange": "Block B",
+		"statusIcon": "sap-icon://complete"
+	}, {
+		"key": "DIVLL",
+		"name": "Diversität in Lehr- und Lernprozessen",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 3,
+		"grundentlastung": "1,0",
+		"veranstaltungen": 8,	
+		"stdproliv": "0,5",
+		"bedarf": "2,5",
+		"instructorKey": "99999999",
+		"instructor": "N.N.",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "Donnerstag",
+		"timerange": "Block D",
+		"statusIcon": "sap-icon://negative"
+	}, {
+		"key": "DIVLL",
+		"name": "Diversität in Lehr- und Lernprozessen",
+		"subjectKey": "",
+		"subject": "Fachübergreifend",
+		"semesterKey": "HS2",
+		"semester": "2. Hauptsemester",
+		"teilnehmer": 3,
+		"grundentlastung": "1,0",
+		"veranstaltungen": 8,	
+		"stdproliv": "0,5",
+		"bedarf": "2,5",
+		"instructorKey": "99999999",
+		"instructor": "N.N.",
+		"seminarKey": "XDA",
+		"seminar": "GHRF Darmstadt",
+		"timeline": "",
+		"timerange": "",
+		"statusIcon": "sap-icon://negative"
+	}],
+	"Filter": {
+		"text": "Filtered by: nothing"
+	}
+}

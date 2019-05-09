@@ -1,0 +1,33 @@
+<mvc:View controllerName="com.hcc.bk5.BeKA.controller.instructorList" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Table items="{/instructorSet}" mode="SingleSelectMaster" selectionChange="onInstructorSelect">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Ausbilder" level="H6"/>
+				<ToolbarSpacer/>
+				<Button tooltip="Löschen" icon="sap-icon://less"/>
+				<Button tooltip="Anlegen" icon="sap-icon://add"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column mergeDuplicates="true" width="15%"><Text text="Name"/></Column>
+			<Column width="20%"><Text text="Modul"/></Column>
+			<Column width="15%"><Text text="Zeitleiste / Block" wrapping="true"/></Column>
+			<Column hAlign="Center" width="10%"><Text text="LiV" wrapping="true"/></Column>
+			<Column hAlign="Center" width="10%"><Text text="Bedarf" wrapping="true"/></Column>
+			<Column hAlign="Center" width="50px"><Text text="Status"/></Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Detail">
+				<cells>
+					<ObjectIdentifier title="{name}" text="{key}"/>
+					<ObjectIdentifier title="{modul}" text="{subject}"/>
+					<ObjectIdentifier title="{timeline}" text="{timerange}"/>
+					<Text text="{teilnehmer}"/>
+					<Text text="{bedarf}"/>
+					<core:Icon src="{statusIcon}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

@@ -1,0 +1,129 @@
+<core:View height="100%" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns:tnt="sap.tnt"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns="sap.ui.commons" xmlns:mvc="sap.ui.core.mvc" controllerName="com.hcc.bk5.BeKA.controller.app">
+	<tnt:ToolPage id="toolPage" sideExpanded="false">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<m:Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress">
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="High"/>
+					</m:layoutData>
+				</m:Button>
+				<m:ToolbarSpacer width="20px"/>
+				<m:Button text="Planung" type="Transparent" press="handlePlanningPress">
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="Low"/>
+					</m:layoutData>
+				</m:Button>
+				<m:Button text="Versionen" type="Transparent" press="handleVersionsPress">
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="Low"/>
+					</m:layoutData>
+				</m:Button>
+				<m:Button text="View" type="Transparent" press="handleViewPress">
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="Low"/>
+					</m:layoutData>
+				</m:Button>
+				<m:Button text="Berichte" type="Transparent" press="handleReportingPress">
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="Low"/>
+					</m:layoutData>
+				</m:Button>				
+				<m:Button text="Hilfe" type="Transparent">
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="Low"/>
+					</m:layoutData>
+				</m:Button>
+				<tnt:ToolHeaderUtilitySeparator/>
+				<m:ToolbarSpacer>
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="High" minWidth="20px"/>
+					</m:layoutData>
+				</m:ToolbarSpacer>
+				<m:Text text="Veranstaltungsplanung" wrapping="false"/>		
+				<m:ToolbarSpacer width="20px"/>				
+				<m:Button text="Alan Smith" type="Transparent" press="handleUserNamePress">
+					<m:layoutData>
+						<m:OverflowToolbarLayoutData priority="High"/>
+					</m:layoutData>
+				</m:Button>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation selectedKey="{/selectedKey}" itemSelect="onItemSelect">
+				<tnt:NavigationList items="{path: '/navigation'}">
+					<tnt:NavigationListItem text="{title}" icon="{icon}" enabled="{enabled}" expanded="{expanded}" items="{items}" key="{key}">
+						<tnt:NavigationListItem text="{title}" key="{key}" enabled="{enabled}"></tnt:NavigationListItem>
+					</tnt:NavigationListItem>
+				</tnt:NavigationList>
+				<tnt:fixedItem>
+					<tnt:NavigationList items="{path: '/fixedNavigation'}">
+						<tnt:NavigationListItem text="{title}" icon="{icon}"></tnt:NavigationListItem>
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<l:Splitter id="mainSplitter" height="100%" width="100%" orientation="Vertical">
+				<fb:FilterBar id="filterbar" reset="onReset" search="onSearch" useToolbar="false" showGoOnFB="true" showRestoreButton="false"
+					filterContainerWidth="300px" showFilterConfiguration="false">
+					<fb:layoutData><l:SplitterLayoutData size="110px" resizable="false"/></fb:layoutData>
+					<fb:filterItems>
+						<fb:FilterItem name="A" label="Studienseminar">
+							<fb:control>
+								<m:Select id="slSeminar" forceSelection="true" change="onSelectChange" selectedKey="XFF" items="{ path: '/seminarSet'}">
+									<core:Item key="{key}" text="{name}"/>
+								</m:Select>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="C" label="Fach">
+							<fb:control>
+								<m:MultiComboBox items="{ path: '/subjectSet', sorter: { path: 'name' } }">
+									<core:Item key="{key}" text="{name}"/>
+								</m:MultiComboBox>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="D" label="Periode">
+							<fb:control>
+								<m:Select id="slPeriod" change="onSelectChange" forceSelection="true" selectedKey="201902" width="250px" items="{ path: '/periodSet' }">
+									<core:Item key="{key}" text="{name}"/>
+								</m:Select>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="E" label="Semester">
+							<fb:control>
+								<m:Select id="slSemester" change="onSelectChange" forceSelection="false" items="{ path: '/semesterSet' }">
+									<core:Item key="{key}" text="{name}"/>
+								</m:Select>
+							</fb:control>
+						</fb:FilterItem>
+					</fb:filterItems>
+				</fb:FilterBar>
+				<l:Splitter id="contSplitter" height="100%" width="100%" orientation="Horizontal">
+					<l:Splitter id="leftSplitter" height="100%" width="100%" orientation="Vertical">
+						<m:NavContainer id="pageContainer" initialPage="participants">
+							<m:pages>
+								<m:ScrollContainer id="participants" horizontal="false" vertical="true" height="100%">
+									<mvc:XMLView viewName="com.hcc.bk5.BeKA.view.participantList"/>
+								</m:ScrollContainer>
+								<m:ScrollContainer id="instructor" horizontal="false" vertical="true" height="100%">
+									<mvc:XMLView viewName="com.hcc.bk5.BeKA.view.instructorList"/>
+								</m:ScrollContainer>
+								<m:ScrollContainer id="timelines" horizontal="false" vertical="true" height="100%">
+									<mvc:XMLView viewName="com.hcc.bk5.BeKA.view.timelineList"/>
+								</m:ScrollContainer>								
+								<m:ScrollContainer id="rooms" horizontal="false" vertical="true" height="100%">
+									<m:Text text="Räume"></m:Text>
+								</m:ScrollContainer>
+							</m:pages>
+						</m:NavContainer>
+					</l:Splitter>
+					<l:Splitter id="rightSplitter" height="100%" width="100%" orientation="Vertical">
+						<mvc:XMLView viewName="com.hcc.bk5.BeKA.view.moduleList"/>
+					</l:Splitter>
+				</l:Splitter>
+			</l:Splitter>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</core:View>
